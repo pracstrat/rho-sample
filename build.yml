@@ -1,0 +1,25 @@
+#sdk: "/Users/Jun/.rvm/gems/ruby-1.9.3-p0@rho/gems/rhodes-3.2.3"
+sdkversion: 3.2.1
+name: ohr
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+wmsdk: "Windows Mobile 6 Professional SDK (ARMV4I)"
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.ohr
+  BundleURLScheme: ohr
+wp:
+  productid: '8af7f460-fd31-012e-3878-58b035feb90e'
+symbian:
+  uid: '0xef6ff902'
+android:
+  version: 2.1
+
+extensions: ["json", "another-extension"]

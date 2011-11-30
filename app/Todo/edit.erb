@@ -1,0 +1,31 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Edit <%= @todo.content %></h1>
+    <a href="<%= url_for :action => :show, :id => @todo.object %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+    <a href="<%= url_for :action => :delete, :id => @todo.object %>" class="ui-btn-right" data-icon="delete" data-direction="reverse">
+      Delete
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @todo.object %>"/>
+      
+          <div data-role="fieldcontain">
+            <label for="todo[content]" class="fieldLabel">Content</label>
+            <input type="text" id="todo[content]" name="todo[content]" value="<%= @todo.content %>" <%= placeholder( "Content" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="todo[done]" class="fieldLabel">Done</label>
+            <input type="text" id="todo[done]" name="todo[done]" value="<%= @todo.done %>" <%= placeholder( "Done" ) %> />
+          </div>
+      
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>
