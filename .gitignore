@@ -6,4 +6,9 @@ sim-*
 # build output
 bin/
 
+# simulator
+rhosimulator
+
+# misc
 .rvmrc
+
