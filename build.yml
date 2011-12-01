@@ -15,6 +15,7 @@ iphone:
   entitlements:
   BundleIdentifier: com.rhomobile.ohr
   BundleURLScheme: ohr
+  emulatortarget: ipad
 wp:
   productid: '8af7f460-fd31-012e-3878-58b035feb90e'
 symbian:
