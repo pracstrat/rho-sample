@@ -1,20 +1,24 @@
 A sample todos rhomobile app
 ---
 
-Install
+Install(gem)
 ===
 
 ```
 $ gem install rhodes
 ```
 
-Run
+Run with [RhoSimulator](http://docs.rhomobile.com/rhodes/simulator)
 ===
 
-Run with RhoSimulator
+If you have `rhodes` gem, then RhoSimulator is installed already
+
+* Install(Mac)
+
+[http://rhosimulator.s3.amazonaws.com/RhoSimulatorMac.zip](http://rhosimulator.s3.amazonaws.com/RhoSimulatorMac.zip)
 
 
-Add this to `build.yml` file
+* Add follow to `build.yml` file
 
 ```
 env:
@@ -22,7 +26,7 @@ env:
         rhosimulator: <RhoSimulator folder>
 ```
 
-Then, Run
+* Run
 
 ```
 $ rake run:android:rhosimulator 
